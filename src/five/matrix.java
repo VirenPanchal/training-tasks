@@ -3,27 +3,7 @@ package five;
 import java.util.Scanner;
 
 public class matrix {
-	static boolean isSubset(int arr1[][],int arr2[][],int m,int n)
-	{
-		int i=0;
-		int j=0;
-		for(i=0;i<=m;i++)
-		{
-			for(j=0;j<=n;j++)
-			{
-				if(arr2[i][j]==arr1[i][j])
-				{
-					break;
-				}
-				if(j==m)
-				{
-					return false;
-				}
-					return true;
-			}
-		}
-		return false;
-	}
+	
 	public static void main(String[]args)
 	{
 		Scanner sc=new Scanner(System.in);
@@ -70,6 +50,7 @@ public class matrix {
 					arr2[i][j]=sc.nextInt();
 				}
 			}
+		
 			System.out.println("Small Matrix is:");
 			for(int i=1;i<=roww;i++)
 			{
@@ -79,21 +60,15 @@ public class matrix {
 				}
 				System.out.println();
 			}
-			int m=arr1.length;
-			int n=arr2.length;
 			
-			if(isSubset(arr1, arr2, m, n))
-			{
-				System.out.println("Arr2 is subset of Arr1");
-			}
-			else
-			{
-				System.out.println("Arr2 is not subset of Arr1");
-			}
+	
 		}
+		
+	
+			}
 
 	}
-}
+
 	
 		
 		 

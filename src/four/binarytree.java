@@ -32,6 +32,7 @@ public class binarytree {
 		tr.root.left.right=new node(5);
 		tr.root.right.left=new node(6);
 		tr.root.right.right=new node(7);
+		System.out.println("....");
 	}
 }
 
