@@ -1,6 +1,19 @@
 import java.util.Scanner;
 
 public class stringpalindrom {
+	public static boolean compare(String string, String reverse){
+        if(string==null || reverse==null){
+            return false;
+        }
+        if(string.length()!=reverse.length())
+            return false;
+
+        for (int i = 0; i <string.length() ; i++) {
+            if(string.charAt(i)!=reverse.charAt(i))
+                return false;
+        }
+        return true;
+    }
 	public static void main(String[]args)
 	{
 		String string,reverse="";
@@ -16,7 +29,8 @@ public class stringpalindrom {
 			reverse=reverse+string.charAt(i);
 			System.out.println(reverse);
 		}
-		if(string.equals(reverse))
+		System.out.println("Result:"+compare(string, reverse));
+		if(compare(string, reverse)==true)
 		{
 			System.out.println("Its a Palindrom");
 		}

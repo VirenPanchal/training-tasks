@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Stringfrequency {
 	public static void main(String[]args)
 	{
-		int ci,i,j,k,l=0;
-		String str,str1;
+		int i,j,k,l=0;
+		String str;
 		char c,ch;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the String:");
@@ -26,7 +26,10 @@ public class Stringfrequency {
 			{
 				System.out.println(c+"  frequency: "+k +"  times " );
 			}
+			
+			}
+		
 		}
 	}
 
-}
+
