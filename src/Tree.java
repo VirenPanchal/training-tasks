@@ -158,11 +158,11 @@ class Binarytree
 			}
 			if(node.left!=null)
 			{
-				Sum(node.left,sum);
+				ans=ans || Sum(node.left,sum);
 			}
 			if(node.right!=null)
 			{
-				Sum(node.right,sum);
+				ans=ans || Sum(node.right,sum);
 			}
 			
 			return ans;
