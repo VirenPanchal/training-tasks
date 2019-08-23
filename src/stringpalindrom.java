@@ -1,4 +1,7 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class stringpalindrom {
 	public static boolean compare(String string, String reverse){
@@ -14,6 +17,7 @@ public class stringpalindrom {
         }
         return true;
     }
+	
 	public static void main(String[]args)
 	{
 		String string,reverse="";
@@ -27,9 +31,10 @@ public class stringpalindrom {
 		for(int i=c-1;i>=0;i--)
 		{
 			reverse=reverse+string.charAt(i);
-			System.out.println(reverse);
+			
 		}
-		System.out.println("Result:"+compare(string, reverse));
+		System.out.println("Reverse String is:"+reverse);
+		
 		if(compare(string, reverse)==true)
 		{
 			System.out.println("Its a Palindrom");
@@ -38,21 +43,21 @@ public class stringpalindrom {
 		{
 			System.out.println("It is Not a Palindrom");
 		}
-		char[] charactor=string.toCharArray();
-		boolean[]check=new boolean[300];
-		StringBuilder bn=new StringBuilder();
-		for(char d:charactor)
-		{
-			if(!check[d])
-			{
-				check[d]=true;
-				bn.append(d);
-			}
-		}
-		System.out.println("After remove duplicate:"+bn);
+			
+		//Removeing duplicate from the string
 		
-			}
+		StringBuilder sb = new StringBuilder();
+		int idx;
+		for (int i = 0; i < string.length(); i++) {
+		    char ch = string.charAt(i);
+		    idx = string.indexOf(ch, i + 1);
+		    if (idx == -1) {
+		        sb.append(ch);
+		    }
 		}
+		System.out.println("After remove duplicate:"+sb);
+	}
+}
 		
 		
 

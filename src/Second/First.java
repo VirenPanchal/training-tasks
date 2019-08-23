@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class first {
+public class First {
 	public static void main(String[]args) {
 		
 		ArrayList<Integer>arrl=new ArrayList<Integer>();

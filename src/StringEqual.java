@@ -1,5 +1,5 @@
 
-public class stringequal {
+public class StringEqual {
 	public static boolean compare(String x, String y){
         if(x==null || y==null){
             return false;
@@ -15,8 +15,9 @@ public class stringequal {
     }
 	public static void main(String[]args)
 	{
+		
 		String x="Ahmedabad";
-		String y="Vadodara";
+		String y="Surat";
 	    System.out.println("Result after comparing two string:"+compare(x, y));
 	}
 	

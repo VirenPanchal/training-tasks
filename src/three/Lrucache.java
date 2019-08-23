@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.HashSet; 
 import java.util.LinkedList; 
 import java.util.Iterator; 
-public class lrucache { 
+public class Lrucache { 
 
 	static Deque<Integer> dq; 
 	
@@ -12,7 +12,7 @@ public class lrucache {
 
 	static int csize; 
 
-	lrucache(int n) 
+	Lrucache(int n) 
 	{ 
 		dq = new LinkedList<>(); 
 		map = new HashSet<>(); 
@@ -56,7 +56,7 @@ public class lrucache {
 
 	public static void main(String[] args) 
 	{ 
-		lrucache ca = new lrucache(3); 
+		Lrucache ca = new Lrucache(3); 
 		ca.refer(1); 
 		ca.refer(2); 
 		ca.refer(3); 

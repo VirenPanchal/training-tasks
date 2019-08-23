@@ -3,7 +3,7 @@ package First;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class hello {
+public class Hello {
 	public static void main(String[]args) throws Throwable
 	{
 		System.out.println("Hello Scaletech:");
