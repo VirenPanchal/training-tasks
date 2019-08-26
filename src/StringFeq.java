@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Stringfeq { 
+public class StringFeq { 
 
 	static final int M = 26; 
 

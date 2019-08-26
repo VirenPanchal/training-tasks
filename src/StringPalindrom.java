@@ -3,7 +3,7 @@ import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class stringpalindrom {
+public class StringPalindrom {
 	public static boolean compare(String string, String reverse){
         if(string==null || reverse==null){
             return false;

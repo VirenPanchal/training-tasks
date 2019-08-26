@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Second {
 	public static void main(String[]args) {
+		
 		//Add value in ArrayList
 		ArrayList<Integer>ar=new ArrayList<Integer>();
 		ar.add(1);

@@ -29,7 +29,7 @@ public class Stringtask {
 
 	public static void main(String[]args)
 	{
-		String str,rev="",rev1="";
+		String str,rev="";
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.println("Enter the string:");
