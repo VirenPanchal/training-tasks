@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+	background-color:lightblue;
+
+}
+input
+{
+	font-size: large;
+	
+}
+textarea
+{
+	font-size: large;
+}
+form
+{
+	align:center;
+	margin-left:center;
+}
+h1
+{
+	font-style: italic;
+	
+}
