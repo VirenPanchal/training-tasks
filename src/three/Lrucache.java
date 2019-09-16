@@ -2,7 +2,8 @@ package three;
 
 import java.util.Deque; 
 import java.util.HashSet; 
-import java.util.LinkedList; 
+import java.util.LinkedList;
+import java.util.Scanner;
 import java.util.Iterator; 
 public class Lrucache { 
 
@@ -57,13 +58,24 @@ public class Lrucache {
 	public static void main(String[] args) 
 	{ 
 		Lrucache ca = new Lrucache(3); 
-		ca.refer(1); 
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n=sc.nextInt();
+		System.out.println("Enter the value:");
+		for(int i=0;i<=n-1;i++)
+		{
+			int val=sc.nextInt();
+			ca.refer(val);
+		
+		}
+			ca.display();
+	/*	ca.refer(1); 
 		ca.refer(2); 
 		ca.refer(3); 
 		ca.refer(1); 
 		ca.refer(4); 
 		ca.refer(5); 
-		ca.display(); 
+		ca.display();*/ 
 	} 
 } 
  

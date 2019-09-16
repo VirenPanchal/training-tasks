@@ -65,7 +65,7 @@ public class Linkedlist {
         return list; 
     } 
 	
-	//updateNode
+	//UpdateNode
 	void updateNode()
 	{
 		int i;
@@ -74,7 +74,7 @@ public class Linkedlist {
 			System.out.println("Linked list is empty");
 			return;
 		}
-		System.out.println("Enter the position:");
+		System.out.println("REEnter the position:");
 		Scanner sc=new Scanner(System.in);
 		int pos=sc.nextInt();
 	
@@ -83,6 +83,7 @@ public class Linkedlist {
 			System.out.println("Invalid node position:");
 			return;
 		}
+		
 		if(pos>=1)
 		{
 			System.out.println("Enter the new data:");
@@ -90,7 +91,7 @@ public class Linkedlist {
 				deleteNode(pos-1);
 				InsertNth(value,pos-1);
 			}
-			return;	
+		return;	
 		}
 	
 		//Delete node
@@ -142,9 +143,9 @@ public class Linkedlist {
 	 	   printList(list); 
 	 	   
 	        System.out.println("Enter the case --- 1.insert element at the End of Linkedlist ");
-	        System.out.println(" 2.delete:"); 
+	        System.out.println(" 2. delete:"); 
 	        System.out.println(" 3. Insert element at position:");
-	        System.out.println(" 4.update:");
+	        System.out.println(" 4. Update:");
 	      
 	        Operation=sc.nextInt();
 	    switch (Operation) {
@@ -175,7 +176,16 @@ public class Linkedlist {
 		 break;
 		 
 	  case 4:
-	  list.updateNode();
+		  System.out.println("Enter the position:");
+		  int num=sc.nextInt();
+		  if(num>n)
+		  {
+			  System.out.println("Enter valid num");
+		  }
+		  else
+		  {
+			  list.updateNode();
+		  }
 	  printList(list);
 	  
 	  }
