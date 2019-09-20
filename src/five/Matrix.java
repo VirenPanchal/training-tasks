@@ -35,6 +35,12 @@ public class Matrix
 		int row1=sc.nextInt();
 		System.out.println("Enter the number of column:");
 		int column1=sc.nextInt();
+		if(row<=row1 && column<=column1)
+		{
+			System.out.println("Enter the valid row of sub matrix:");
+		}
+		else
+		{
 		System.out.println("Enter sub matrix:");
 		for(int i=0;i<row1;i++)
 		{
@@ -51,7 +57,8 @@ public class Matrix
 				System.out.print(arr2[i][j] + " ");
 			}
 			System.out.println("");
-		}	
+		}
+		}
 		int flag=0;
 		int main2[][]=new int[2][2];
 		for(int i=0;i<2;i++)

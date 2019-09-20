@@ -4,7 +4,8 @@ public class Stringfrequncymodi {
 	public static void main(String[] args) {
 		String str = "";
 		int count = 0, len = 0, flag = 0;
-
+		int[] arr = new int[50];
+		int check=1;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a string:");
 
@@ -27,15 +28,36 @@ public class Stringfrequncymodi {
 
 			if (flag != 1) {
 				System.out.println(str.charAt(i) + "--" + count);
-				int[] arr = new int[50];
-				for (int m = 0; m <= count; m++) {
-					arr[m] = count;
-				}
-
+				
+				arr[i] = count;
+//				i++;
+				
+//				for (int m = 0; m <= count; m++) {
+//					arr[m] = count;
+//				}
+				
+			}
 				flag = 0;
+				
+			}
+		
+			int freq = arr[0];
+			for(int index = 1; index < str.length()- 1; index++) {
+				if(freq != arr[index]) {
+					check=0;
+					break;
+				}
+			}
+			if(check==0)
+			{
+				System.out.println("No");
+			}
+			else
+			{
+				System.out.println("Yes");
 			}
 
 		}
 
 	}
-}
+
